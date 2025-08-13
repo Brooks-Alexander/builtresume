@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Alexander Brooks</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        /* Custom styles for a clean layout and photo placeholder */
+        .resume-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+        }
+        .section-heading {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
+            color: #1f2937;
+        }
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 0.75rem;
+            text-align: center;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 3px solid #f3f4f6;
+        }
+        
+        /* Style for print */
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            header.flex.flex-col.md\:flex-row.justify-between.items-center.mb-6 {
+            display: flex;
+            flex-direction: row;
+            /* Add other flex properties as needed, e.g., alignItems, justifyContent */
+            align-items: center;
+            justify-content: space-between;
+            }
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+
+<div class="resume-container">
+    <!-- Header with Name, Contact Info, and Photo Placeholder -->
+    <header class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <div class="text-left mb-6 md:mb-0">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-1">Alexander Brooks</h1>
+            <p class="text-lg text-gray-600 font-semibold mb-4">
+                Kundendienst • Projektmanagement • 
+                Prozessautomatisierung • Softwarevalidierung • Internationales Teammanagement
+            </p>
+            <div class="text-sm text-gray-500 space-y-1">
+                <p>E-Mail: brooks.alexander.r@gmail.com</p>
+                <p>Adresse: Dorfwiesentrs. 5/2, 75385 Bad Teinach-Zavelstein</p>
+                <p>Telefonnummer: +4917651556258</p>
+            </div>
+        </div>
+        <div class="headshot" id="headshot-placeholder">
+            <img src="../../headshot.jpeg" alt="Your Headshot" class="w-full h-full object-cover">
+        </div>
+    </header>
+
+    <!-- Professional Experience Section -->
+    <main>
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold section-heading">Berufserfahrung</h2>
+            
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Fallmanager</h3>
+                    <p class="text-md text-gray-700 mb-2">Magdala House - St. Louis, USA</p>
+                    <span class="text-sm text-gray-500">Jun 2024 - Mai 2025</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Umfassende Unterstützung und Betreuung von Klienten durch die Entwicklung und Koordination individueller Fallpläne.</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Kundendienst</h3>
+                    <p class="text-md text-gray-700 mb-2">Magdala House - St. Louis, USA</p>
+                    <span class="text-sm text-gray-500">Mai 2024 - Jun 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Sorgen Sie für die Kundenzufriedenheit und pflegen Sie gleichzeitig die Firmenräume und -dokumente.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Anwendungsingenieur II</h3>
+                    <p class="text-md text-gray-700 mb-2">Legrand Wattstopper - Dallas TX, USA</p>
+                    <span class="text-sm text-gray-500">Jul 2018 - Mrz 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Leitung von Automatisierungs- und Prozessoptimierungsprojekten sowie Entwicklung technischer Steuerungssysteme in enger Zusammenarbeit mit Kunden.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Anwendungsingenieur I</h3>
+                    <p class="text-md text-gray-700 mb-2">Legrand Wattstopper - Dallas TX, USA</p>
+                    <span class="text-sm text-gray-500">Jul 2018 - Apr 2021</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Entwicklung effizienter Steuerungssysteme basierend auf Kundenanforderungen und der Erstellung mechanischer sowie elektrischer Zeichnungen.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Praktikant im Bereich Industrietechnik</h3>
+                    <p class="text-md text-gray-700 mb-2">United Parcel Service, Inc.</p>
+                    <span class="text-sm text-gray-500">Mai 2017 - Aug 2017</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Analyse und Optimierung von Betriebsprozessen, einschließlich der Durchführung von Zeitstudien, was zu einer Produktivitätssteigerung von 15 % führte.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold section-heading">Projekte</h2>
+            
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Leiter Qualitätssicherung</h3>
+                    <p class="text-md text-gray-700 mb-2">Kreativstorm</p>
+                    <span class="text-sm text-gray-500">Aug 2023 - Sep 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Leitung eines internationalen Teams zur Überwachung und Durchführung von Qualitätssicherungsaktivitäten für Softwareprodukte.</li>
+                </ul>
+            </div>
+            
+            <br></br> 
+            <!-- the <br></br> is meant to add a break so that the document
+             will not print with part of the project experience on 
+             two different pages -->
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Lösungsarchitekt</h3>
+                    <p class="text-md text-gray-700 mb-2">Legrand North America</p>
+                    <span class="text-sm text-gray-500">Apr 2022 - Mrz 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Leitung einer RPA-Initiative zur Optimierung manueller Prozesse, von der Anforderungsanalyse bis zur Initiierung der Entwicklungsphase.</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold">Gründer</h3>
+                    <p class="text-md text-gray-700 mb-2">Know Where, USA Ltd Co</p>
+                    <span class="text-sm text-gray-500">Aug 2020 - Jun 2022</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Verantwortlich für Ideenfindung, Entwicklung, Beschaffung, Marketing, Vertrieb und Webentwicklung von Know Where, USA Ltd Co.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold section-heading">Ausbildung</h2>
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold">Bachelor of Science - Erdöltechnik</h3>
+                <span class="text-sm text-gray-500">Aug 2013 - Mai 2018</span>
+            </div>
+            <p class="text-md text-gray-700 mb-2">Missouri University of Science & Technology, USA</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Redner der Abschlussfeier 2018 und Absolvierung eines Auslandssemesters in Malaysia.</li>
+            </ul>
+        </section>
+
+        <!-- Languages and Skills Section -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold section-heading">Sprachkenntnisse</h2>
+                    <ul class="list-none text-gray-700">
+                        <li class="mb-1"><span class="font-semibold">Deutsch:</span> Konversation</li>
+                        <li><span class="font-semibold">Englisch:</span> Muttersprache</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold section-heading">Kompetenzen</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                        <div>
+                            <p class="font-semibold mb-1">Programmiersprachen:</p>
+                            <p>Python, JavaScript, SQL, R</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">Software & Tools:</p>
+                            <p>AutoCAD, MS Excel, Git, GitHub</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">Web-Technologien:</p>
+                            <p>React.js, Node.js, HTTP, API-Entwicklung, JSON</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">Automatisierung & RPA:</p>
+                            <p>Robotic Process Automation (RPA)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+</div>
+
+</body>
+</html>
